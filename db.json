@@ -1,0 +1,28 @@
+{
+  "entreprise": [
+    {
+      "id": 3,
+      "name": "Test",
+      "empcount": "3645",
+      "revenue": "2000",
+      "address": "Medina rue 6",
+      "isactive": true
+    },
+    {
+      "id": 4,
+      "name": "Test",
+      "empcount": "3857",
+      "revenue": "3000",
+      "address": "Dakar",
+      "isactive": false
+    },
+    {
+      "id": 5,
+      "name": "test",
+      "empcount": "47367",
+      "revenue": "500",
+      "address": "adress",
+      "isactive": false
+    }
+  ]
+}

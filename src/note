@@ -1,0 +1,35 @@
+0: on creer un fichier MaterialModule et on l'import au niveau de app.module
+1: on cree un component entreprise (company)
+2: on ajoute bootstrap cdn et on ajoute le Navbar
+3: on cree le service employe (shared)
+4: on cree nos models dans Models
+  -a: entrepriseModel (companyModel)
+5: on cree un variable entrepriseData de type EntrepriseModel dans entreprise.ts
+    on creer le tableau des colones ki seront affiché dans la tableau
+6: on  importe le MatTableModule dans MaterialModule, dans la vue on cree une table et on met matTable pour dire a Angular kon v utiliser AngularMaterial
+7: on cree tout les colones et ligne du tableau
+8: on cree le button ki nous permet d'ajouter un nouveau employe et import MatButtonModule dans MaterialModule
+9:dans employe.component .ts on cree le metohod OpenDialogCreate qui permettra d'ouvrir une boite de dialog ou on pourra mettre les input
+10:  on import MatDialogModule dans MaterialModule,on cree une variable dialog de type MatDialo dans le constructeur
+11: on cree un nouveau component addEmployer
+12: on cree u form reactive dans addEmployer.comp.ts
+13: on import dans MatDialogModule:  MatFormFieldModule,MatInputModule, MatCheckboxModule, MatSelectModule et MatCardModule
+14: creer les methodes saveEmployer et closeDiolog, on creer dabord une variable de type MatDialo
+15: ajouter le css dans addEmployer.comp.css
+16: on cree le formulaire dans addEmployer.html
+17: installer le json-server http et creer un fichier db.json dans la racine et le personalise
+18: on va dans employeServie et mettre les methodes il faut d'abord importé le httpClientModule dans app.module
+19: on va dans addEmployer.ts appeler les services ensuite le service get dans entreprise.ts
+20 dans employe.component.ts dans a methode  OpenDialogCreate on creer un evenement apres la fermeture du boite de dialog
+21: dans employe.component.ts on cree la methode editEmploye
+22: on injecte le OpenDialogCreate
+23: on injecte le data qui est dans OpenDialogCreate dans addEmployer.component.ts
+24: on cree la va editdata:
+25: dans le ngOnInit on verifie si le id est null ou '' pour savoir si on doit modifier ou mettre a jour
+26: on modifie la metode saveEmployer() apres le premier if on ajoute une varible editID et verifie s'il  est vide ou null
+27: on creer la metohde removeEmploye dans entreprise.component.ts
+
+28: on install le sweetalert2. npm install sweetalert2
+29: on suis le site officiel pour configurer
+
+

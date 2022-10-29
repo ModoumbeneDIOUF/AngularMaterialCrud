@@ -1,0 +1,61 @@
+<div class="container mt-3">
+
+Stepper
+  <h1 class="text-center">Angular Material Crud</h1>
+
+  <div class="mat-elevation-z8">
+
+     <div>
+      <a mat-raised-button color="primary" (click)="openDialogCreate('')" style="margin: 2%">Create New</a>
+     </div>
+    <table mat-table [dataSource]="entrepriseData" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let employe">{{employe.id}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef > Name</th>
+          <td mat-cell *matCellDef="let employe">{{employe.name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="empcount">
+          <th mat-header-cell *matHeaderCellDef> Employee Count</th>
+          <td mat-cell *matCellDef="let employe">{{employe.empcount }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="revenue">
+          <th mat-header-cell *matHeaderCellDef> Revenue</th>
+          <td mat-cell *matCellDef="let employe">{{employe.revenue}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="address">
+          <th mat-header-cell *matHeaderCellDef> Address</th>
+          <td mat-cell *matCellDef="let employe">{{employe.address}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="isactive">
+          <th mat-header-cell *matHeaderCellDef> Is Active</th>
+          <td mat-cell *matCellDef="let employe">{{employe.isactive}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef> Action</th>
+          <td mat-cell *matCellDef="let employe">
+              <div>
+                  <a mat-raised-button color="primary" (click)="editEmploye(employe.id)">Edit</a> |
+                  <a mat-raised-button color="accent" (click)="alertQuestionMethod(employe.id)">Delete</a>
+              </div>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayColums"></tr>
+        <tr mat-row *matRowDef="let rows; columns: displayColums;"></tr>
+
+    </table>
+
+  </div>
+
+
+</div>
